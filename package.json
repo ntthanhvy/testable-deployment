@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build:admin-ui": "cd admin-ui && yarn build",
-    "build:admin": "cd admin && yarn build",
+    "build:admin": "cd admin && yarn build --deployment",
     "build:backend": "cd backend && yarn build:admin",
     "build": "yarn build:admin-ui && yarn build:admin && yarn build:backend",
     "dev:server": "cd backend && yarn dev"
