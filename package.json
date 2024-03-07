@@ -1,0 +1,21 @@
+{
+  "name": "medusa-cake",
+  "version": "0.0.1",
+  "description": "A simple web server for serving static files",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "backend",
+      "admin",
+      "admin-ui"
+    ]
+  },
+  "scripts": {
+    "build:admin-ui": "cd admin-ui && yarn build",
+    "build:admin": "cd admin && yarn build",
+    "build:backend": "cd backend && yarn build:admin",
+    "build": "yarn build:admin-ui && yarn build:admin && yarn build:backend",
+    "dev:server": "cd backend && yarn dev"
+  },
+  "packageManager": "yarn@4.0.2"
+}
