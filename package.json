@@ -14,7 +14,7 @@
     "build:admin-ui": "cd admin-ui && yarn build",
     "build:admin": "cd admin && yarn build",
     "build:backend": "cd backend && yarn build:admin",
-    "build": "yarn build:admin-ui && yarn build:admin && yarn build:backend",
+    "build": "yarn build:admin-ui && yarn build:admin && yarn build:backend && cp backend/vercel.json backend/build",
     "dev:server": "cd backend && yarn dev"
   },
   "packageManager": "yarn@4.0.2"
