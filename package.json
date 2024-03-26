@@ -16,6 +16,5 @@
     "build:backend": "cd backend pnpm build:admin",
     "build": "pnpm build:admin-ui && pnpm build:admin && pnpm build:backend && cp backend/vercel.json backend/build",
     "dev:server": "cd backend && yarn dev"
-  },
-  "packageManager": "yarn@4.0.2"
+  }
 }
