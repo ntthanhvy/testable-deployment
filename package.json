@@ -13,8 +13,8 @@
   "scripts": {
     "build:admin-ui": "cd admin-ui && pnpm build",
     "build:admin": "cd admin && pnpm build",
-    "build:backend": "cd backend pnpm build:admin",
-    "build": "pnpm build:admin-ui && pnpm build:admin && pnpm build:backend && cp backend/vercel.json backend/build",
+    "build:backend": "cd backend pnpm build:admin && cp backend/vercel.json backend/build",
+    "build": "pnpm build:admin-ui && pnpm build:admin && pnpm build:backend",
     "dev:server": "cd backend && yarn dev"
   }
 }
